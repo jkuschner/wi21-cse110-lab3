@@ -65,32 +65,9 @@
                 <li>Java</li>
             </ul>
 
-            <div>
-                <p>Here is my favorite Python script that I have written. It's purpose was to
-                    take pixel data as ASCII and convert it into an actual image. I wrote this 
-                    script as to find a flag in a cybersecurity CTF challenge.
-                </p>
+            <br>
 
-                <code>
-                    <pre>
-                        from PIL import image
-                        size = (17*17,37)
-
-                        with open('secret_data.txt',"r") as f:
-                        beep = f.readlines()
-                        supercoolmegalist = b""
-
-                        for x in range(len(beep)):
-                            for lol in beep[x].split("-"):
-                                supercoolmegalist += ((int(lol)).to_bytes(1,'big'))
-                        print(supercoolmegalist)
-
-                        img = Image.frombytes("RGB",size,supercoolmegalist)
-
-                        img.save('flag.png')
-                    </pre>
-                </code>
-            </div>
+            <p>My favorite Java method is <code>System.out.println()</code></p> 
 
         </section>
 
@@ -156,16 +133,14 @@
                 <br>
 
                 <table>
-                    <thead>
-                        <tr>
-                            <th colspan="3">More panda info!</th>
-                        </tr>
-                    </thead>
                     <colgroup>
                         <col>
                         <col class="giant">
                         <col class="red">
                     </colgroup>
+                    <tr>
+                        <th colspan="3">More panda info!</th>
+                    </tr>
                     <tr>
                         <td></td>
                         <th scope="col">Giant Panda</th>
@@ -212,7 +187,7 @@
 
             <br>
 
-            <form action="" method="get">
+            <form method="get">
                 <div class="myform">
                     <label for="name">Enter your name, please:</label>
                     <input type="text" name="name" id="name">
@@ -245,13 +220,13 @@
                     <legend>What is a Giant Panda's favorite food?</legend>
 
                     <input type="radio" id="wheatgrass">
-                    <label for="wheatgrass">Wheatgrass</label></br>
+                    <label for="wheatgrass">Wheatgrass</label><br>
 
                     <input type="radio" id="bamboo">
-                    <label for="bamboo">Bamboo</label></br>
+                    <label for="bamboo">Bamboo</label><br>
 
                     <input type="radio" id="fishsticks">
-                    <label for="fishsticks">Fishsticks</label></br>
+                    <label for="fishsticks">Fishsticks</label><br>
                 </fieldset>
 
                 <label for="panda-fan">Are you a fan of pandas?</label>
@@ -279,7 +254,7 @@
                 <br>
 
                 <label for="panda-phone">Please enter your phone number to receive more panda related updates.</label>
-                <input type="phone" id="panda-phone" name="panda-phone">
+                <input type="tel" id="panda-phone" name="panda-phone">
                 <br>
 
                 <input type="submit">
@@ -341,6 +316,23 @@
                     <rect width="500" height="500" style="fill:#000000;"/>
                 </svg>
             </figure>
+        </section>
+
+        <section>
+            <h5>Let's end with some ASCII art!</h5>
+
+            <pre>
+        _____
+    ,-:` \;',`'-, 
+  .'-;_,;  ':-;_,'.
+ /;   '/    ,  _`.-\
+| '`. (`     /` ` \`|
+|:.  `\`-.   \_   / |
+|     (   `,  .`\ ;'|
+ \     | .'     `-'/
+  `.   ;/        .'
+jgs `'-._____.
+            </pre>
         </section>
 
         <footer>
