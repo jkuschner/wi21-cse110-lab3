@@ -21,7 +21,7 @@
         </header>
         <main>
             <p>Hi, my name is Joshua Kuschner, and this website contains a description
-                 of who I am as a programmer and as a person.
+                 of who I am as a programmer and as a person. It also may or may not contain some panda relating things.
                  If you want some more detail, check out my other
                   <a href="https://jkuschner.dev">website</a>.
             </p>
@@ -40,7 +40,7 @@
             <blockquote cite="https://www.goodreads.com/quotes/50543-there-is-no-greater-danger-than-underestimating-your-opponent">
                 <p>There is no greater danger than underestimating your opponent.</p>
             </blockquote>
-            <figcaption>-Lao Tzu</figcaption>
+            <caption>-Lao Tzu</caption>
 
             <p>Since then, I have tackled a few more challenging programming projects,
                 so I have a better sense of what it takes to be a programmer. Here is a list
@@ -55,8 +55,7 @@
             <h3>Programming Languages</h3>
 
             <p>Over the course of my carreer I've had exposure to 
-                quite a few different languages. Below I have ranked them based on how
-                how much I enjoy writing code in them.</p>
+                quite a few different languages, like the ones below: </p>
 
             <ul>
                 <li>Python</li>
@@ -68,7 +67,7 @@
 
             <div>
                 <p>Here is my favorite Python script that I have written. It's purpose was to
-                    convert pixel data as ASCII and convert it into an actual image. I wrote this 
+                    take pixel data as ASCII and convert it into an actual image. I wrote this 
                     script as to find a flag in a cybersecurity CTF challenge.
                 </p>
 
@@ -107,7 +106,7 @@
                 <li>Cooking</li>
                 <li>Video Games</li>
                 <li>Board Games</li>
-                <li><span class="animal">Cat</span>Care</li>
+                <li><span class="animal">Cat</span> Care</li>
                 <li>Tennis</li>
             </ul>
 
@@ -152,9 +151,49 @@
             </figure>
 
             <aside>
-                <p><strong>Fun Fact: </strong><span class="animal">Pandas</span>spend <b>10-16</b> hours a day eating.</p>
+                <p><strong>Fun Fact: </strong><span class="animal">Pandas</span> spend <b>10-16</b> hours a day eating.</p>
 
                 <br>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="3">More panda info!</th>
+                        </tr>
+                    </thead>
+                    <colgroup>
+                        <col>
+                        <col class="giant">
+                        <col class="red">
+                    </colgroup>
+                    <tr>
+                        <td></td>
+                        <th scope="col">Giant Panda</th>
+                        <th scope="col">Red Panda</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">Kingdom</th>
+                        <td>Animalia</td>
+                        <td>Animalia</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Class</th>
+                        <td>Carnivora</td>
+                        <td>Carnivora</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Family</th>
+                        <td>Ursidae</td>
+                        <td>Ailuridae</td>
+                    </tr>
+                </table>
+
+                <br>
+
+                <details>
+                    <summary>Secret panda fact</summary>
+                    In Chinese, the Giant Panda is actually called a "giant bear cat" when translated literally.
+                </details>
 
                 <p>Want to learn more about <span class="animal">pandas?</span> Check this out!</p>
 
@@ -169,9 +208,13 @@
         </section>
 
         <section>
+            <p>Now that you're panda experts, it's time for some questions.</p>
+
+            <br>
+
             <form action="" method="get">
                 <div class="myform">
-                    <label for="name">Enter your name, peasant:</label>
+                    <label for="name">Enter your name, please:</label>
                     <input type="text" name="name" id="name">
                 </div>
             </form>
@@ -183,7 +226,97 @@
                     <option>Elephant Seal</option>
                     <option>Orangutan</option>
                 </optgroup>
+                <optgroup label="Reptiles">
+                    <option>Crested Gecko</option>
+                    <option>Snapping Turtle</option>
+                    <option>Diamondback Rattlesnake</option>
+                </optgroup>
+                <optgroup label="Birds">
+                    <option>Cassowary</option>
+                    <option>Heron</option>
+                    <option>Kookaburra</option>
+                </optgroup>
             </select>
+
+            <br>
+
+            <form>
+                <fieldset>
+                    <legend>What is a Giant Panda's favorite food?</legend>
+
+                    <input type="radio" id="wheatgrass">
+                    <label for="wheatgrass">Wheatgrass</label></br>
+
+                    <input type="radio" id="bamboo">
+                    <label for="bamboo">Bamboo</label></br>
+
+                    <input type="radio" id="fishsticks">
+                    <label for="fishsticks">Fishsticks</label></br>
+                </fieldset>
+
+                <label for="panda-fan">Are you a fan of pandas?</label>
+                <input type="checkbox" id="panda-fan" name="panda=fan">
+                <br>
+
+                <label for="panda-color">What color could you find on a panda?</label>
+                <input type="color" id="panda-color" name="panda-color">
+                <br>
+
+                <label for="panda-date">When did you see your first panda?</label>
+                <input type="date" id="panda-date" name="panda-date">
+                <br>
+
+                <label for="panda-number">How many pandas are in the world today?</label>
+                <input type="number" id="panda-number" name="panda-number">
+                <br>
+
+                <label for="panda-url">What is your favorite website for panda facts?</label>
+                <input type="url" id="panda-url" name="panda-url">
+                <br>
+
+                <label for="panda-email">Please enter your email to receive panda related updates.</label>
+                <input type="email" id="panda-email" name="panda-email">
+                <br>
+
+                <label for="panda-phone">Please enter your phone number to receive more panda related updates.</label>
+                <input type="phone" id="panda-phone" name="panda-phone">
+                <br>
+
+                <input type="submit">
+
+            </form>
+
+            <br>
+
+            <label for="effect-of-pandas">How have pandas affected your life, personally?</label>
+
+            <br>
+            
+            <textarea id="effect-of-pandas" name="effect-of-pandas" rows="10" cols="60">
+                I honestly wouldn't be alive today if it weren't for pandas...
+            </textarea>
+
+            <br>
+
+            <label for="fav-panda">What is your favorite type of panda?</label>
+            <input list="panda-types" id="fav-panda" name="fav-panda"/>
+
+            <datalist id="panda-types">
+                <option value="Giant panda">
+                <option value="Red panda">
+                <option value="Qinling panda">
+            </datalist>
+
+            <p>Thanks for answering my questions. The button below will give you a free
+                gift!(at least it would if knew any JavaScript)
+            </p>
+
+            <button onclick="giveGift()">Gift Me!</button>
+
+            <template>
+                <h3>Congratulations!!</h3>
+                <img src="media/gift.png">
+            </template>
         </section>
 
 
@@ -216,25 +349,3 @@
 
     </body>
 </html>
-
-
-<!--TODO
-optgroup
-fieldset
-legend
-input*
-textarea
-datalist
-select
-option
-table
-tr
-td
-th
-caption
-col
-colgroup
-details
-summary
-button
-template-->
