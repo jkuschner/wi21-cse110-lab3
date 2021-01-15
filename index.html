@@ -3,10 +3,19 @@
     <head>
         <title>My New HTML Website</title>
         <meta name="keywords" content="HTML, Programming, Personal, Education"/>
-        <link rel="icon" href="images/favicon.ico">
+        <link rel="icon" href="media/favicon.ico">
     </head>
 
     <body>
+        <nav>
+            <ul>
+                <li><a href="https://jkuschner.github.io">My Old Markdown Website</a></li>
+                <li><a href="https://jkuschner.dev">My Even Older Custom Website</a></li>
+            </ul>
+        </nav>
+
+        <hr>
+
         <header>
             <h1>My New HTML Website</h1>
         </header>
@@ -39,15 +48,57 @@
             </p>
             <ol>
                 <li>Huffman encoder/decoder for files containing ASCII characters</li>
-                <li>Bayes classifier that uses Quadratic Discriminant Analysis to classify benign/malignant tumors</li>
+                <li>Bayes classifier that uses <i>Quadratic Discriminant Analysis</i> to classify benign/malignant tumors</li>
                 <li>Create and design a website to detail my professional and personal endeavors</li>
             </ol>
+
+            <h3>Programming Languages</h3>
+
+            <p>Over the course of my carreer I've had exposure to 
+                quite a few different languages. Below I have ranked them based on how
+                how much I enjoy writing code in them.</p>
+
+            <ul>
+                <li>Python</li>
+                <li>C</li>
+                <li>ARM Assembly</li>
+                <li>C++</li>
+                <li>Java</li>
+            </ul>
+
+            <div>
+                <p>Here is my favorite Python script that I have written. It's purpose was to
+                    convert pixel data as ASCII and convert it into an actual image. I wrote this 
+                    script as to find a flag in a cybersecurity CTF challenge.
+                </p>
+
+                <code>
+                    <pre>
+                        from PIL import image
+                        size = (17*17,37)
+
+                        with open('secret_data.txt',"r") as f:
+                        beep = f.readlines()
+                        supercoolmegalist = b""
+
+                        for x in range(len(beep)):
+                            for lol in beep[x].split("-"):
+                                supercoolmegalist += ((int(lol)).to_bytes(1,'big'))
+                        print(supercoolmegalist)
+
+                        img = Image.frombytes("RGB",size,supercoolmegalist)
+
+                        img.save('flag.png')
+                    </pre>
+                </code>
+            </div>
 
         </section>
 
         <section>
+            <br>
             <header>
-                <h3>Some other stuff about me</h3>
+                <h2>Some other stuff about me</h2>
             </header>
 
             <p>Outside of programming, I have a few other hobbies:</p>
@@ -56,50 +107,119 @@
                 <li>Cooking</li>
                 <li>Video Games</li>
                 <li>Board Games</li>
-                <li>Cat Care</li>
+                <li><span class="animal">Cat</span>Care</li>
                 <li>Tennis</li>
             </ul>
 
             <hr>
 
-            <p>Also, my favorite animal is the Giant Panda</p>
+            <p>Also, my favorite animal is the <span class="animal">Giant Panda</span></p>
             
             <figure>
-                <img src="images/panda.jpg" alt="giant panda">
+                <picture>
+                    <source srcset="media/panda.jpg" media="(min-width: 1200px)">
+                    <img src="media/smallpanda.jpg" alt="giant panda">
+
+                </picture>
+
+                <figcaption><span class="animal">Pandas</span> are pretty neat!</figcaption>
+            </figure>
+
+            <figure>
+                <figcaption>You're probably wondering what pandas sound like at this point.</figcaption>
+
+                <br>
+
+                <audio 
+                    controls
+                    src="media/panda.wav">
+                </audio>
+            </figure>
+
+            <br>
+
+            <figure>
+                <figcaption>Now it's time for the obligatory Panda video.</figcaption>
+
+                <video controls width="800">
+                    <source src="media/pandavid.mp4"
+                            type="video/mp4">
+                </video>
+
+                <br>
+
+                <cite><a href="https://www.freestock.com/free-videos/cute-giant-panda-bear-eating-bamboo-3816065">Image used under license from Freestock.com</a></cite>
             </figure>
 
             <aside>
-                <p>Pandas spend 10-16 hours a day eating.</p>
+                <p><strong>Fun Fact: </strong><span class="animal">Pandas</span>spend <b>10-16</b> hours a day eating.</p>
+
+                <br>
+
+                <p>Want to learn more about <span class="animal">pandas?</span> Check this out!</p>
+
+                <iframe id="Pandafacts"
+                    title="Pandafacts site"
+                    width="800"
+                    height="400"
+                    src="https://www.pandasinternational.org/education-2/panda-facts/">
+                </iframe>
             </aside>
 
         </section>
+
+        <section>
+            <form action="" method="get">
+                <div class="myform">
+                    <label for="name">Enter your name, peasant:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+            </form>
+
+            <label for="favorite-animal">What's your favorite animal?</label>
+            <select id="favorite-animal">
+                <optgroup label="Mammals">
+                    <option>Armadillo</option>
+                    <option>Elephant Seal</option>
+                    <option>Orangutan</option>
+                </optgroup>
+            </select>
+        </section>
+
+
+        <section>
+            <figure>
+                <figcaption><em>Behold the empty box.</em></figcaption>
+
+                <br>
+
+                <canvas width="400" height="400" style="border: 5px solid #000000;"></canvas>
+
+            </figure>
+
+            <figure>
+                <figcaption>If you thought empty box was cool, wait until you see this.</figcaption>
+
+                <br><br>
+
+                <h3><strong>BIG SOLID BOX</strong></h3>
+
+                <svg width="500" height="500">
+                    <rect width="500" height="500" style="fill:#000000;"/>
+                </svg>
+            </figure>
+        </section>
+
+        <footer>
+            <p>This website was created by Joshua Kuschner.</p>
+        </footer>
 
     </body>
 </html>
 
 
 <!--TODO
-footer
-nav
-div
-span
-ul
-b
-i
-strong
-code
-pre
-br
-picture
-iframe
-audio
-video
-source
-canvas
-svg
-form
 optgroup
-label
 fieldset
 legend
 input*
