@@ -1,0 +1,91 @@
+.pandaform {
+    border: 1rem ridge rgb(35,22,145);
+    border-radius: 30px;
+}
+
+h1, h2 {
+    color: darkslategray;
+}
+
+#funfact {
+    background-color: #008000;
+}
+
+figure > figcaption {
+    text-align: center;
+}
+
+blockquote + p {
+    font-family: 'Imbue', serif;
+    font-size: larger;
+}
+
+svg {
+    position: sticky;
+    display: block;
+}
+
+/* setting up the empty box exhibit */
+canvas {
+    width: 25%;
+    position: static;
+    display: inline;
+}
+
+#middlebox {
+    position: static;
+    width: 25%;
+    flex-grow: 3;
+}
+
+#emptyboxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+[name=cooltable] {
+    display: grid;
+    grid-template-columns: 1rem 2rem 2rem;
+    grid-template-rows: auto max-content max-content;
+    justify-items: center;
+    justify-content: center;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+table * {
+    background-color: hsl(89, 100%, 67%);
+}
+
+figure {
+    margin-left: 1in;
+    margin-right: 1in;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    padding: 1em 1em 1em 1em;
+}
+
+figure figcaption{
+    text-decoration: lightgreen wavy underline;
+    padding-bottom: 1pc;
+    padding-top:1pc;
+}
+
+h2 ~ p {
+    color:darkblue; 
+}
+
+button:hover {
+    color: darkred;
+}
+
+button:active {
+    background-color: darkorange;
+}
+
+iframe {
+    width: 85%;
+    height: 60rem;
+    margin: 1rem 2rem 2rem 1rem;
+}

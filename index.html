@@ -5,6 +5,10 @@
         <title>My New HTML Website</title>
         <meta name="keywords" content="HTML, Programming, Personal, Education">
         <link rel="icon" href="media/favicon.ico">
+        <link rel="stylesheet" href="josh.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Imbue:wght@500&display=swap');
+        </style>
     </head>
 
     <body>
@@ -129,12 +133,11 @@
             </figure>
 
             <aside>
-                <p><strong>Fun Fact: </strong><span class="animal">Pandas</span> spend <b>10-16</b> hours a day eating.</p>
+                <p id="funfact"><strong>Fun Fact: </strong><span class="animal">Pandas</span> spend <b>10-16</b> hours a day eating.</p>
 
                 <br>
 
-                <table>
-                    <caption>pretty cool table right?</caption>
+                <table name="cooltable">
                     <colgroup>
                         <col>
                         <col class="giant">
@@ -146,7 +149,7 @@
                     <tr>
                         <td></td>
                         <th scope="col">Giant Panda</th>
-                        <th scope="col">Red Panda</th>
+                        <th style=" color: red;" scope="col">Red Panda</th>
                     </tr>
                     <tr>
                         <th scope="row">Kingdom</th>
@@ -184,16 +187,15 @@
 
         </section>
 
+        <div class="pandaform">
         <section>
             <p>Now that you're panda experts, it's time for some questions.</p>
 
             <br>
 
             <form method="get">
-                <div class="myform">
                     <label for="name">Enter your name, please:</label>
                     <input type="text" name="name" id="name">
-                </div>
             </form>
 
             <label for="favorite-animal">What's your favorite animal?</label>
@@ -295,16 +297,20 @@
                 <img src="media/gift.png">
             </template>
         </section>
+        </div>
 
 
         <section>
             <figure>
-                <figcaption><em>Behold the empty box.</em></figcaption>
+                <figcaption><em>Behold the empty boxes.</em></figcaption>
 
                 <br>
 
-                <canvas width="400" height="400" style="border: 5px solid #000000;"></canvas>
-
+                <div id="emptyboxes">
+                    <canvas width="400" height="400" style="border: 5px solid #000000;"></canvas>
+                    <canvas id="middlebox" width="400" height="400" style="border: 5px solid #000000;"></canvas>
+                    <canvas width="400" height="400" style="border: 5px solid #000000;"></canvas>
+                </div>
             </figure>
 
             <figure>
